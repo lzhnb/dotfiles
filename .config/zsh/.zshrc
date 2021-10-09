@@ -25,6 +25,11 @@ for file in ".aliases"; do
     fi
 done
 
+# apply the binary exectuable file in ~/.local/bin
+path=("$HOME/.local/bin" $path)
+# export to sub-processes (make it inherited by child processes)
+export PATH
+
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f "$XDG_CONFIG_HOME/zsh/.p10k.zsh" ]] || source "$XDG_CONFIG_HOME/zsh/.p10k.zsh"
 
