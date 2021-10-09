@@ -5,10 +5,11 @@
 
 ## Applications
 - zsh
+- tmux
 - vim
 - neovim
 
 ## TODO
-- [ ] tmux
 - [ ] lazygit
+- [ ] bootstrap
 
