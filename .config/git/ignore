@@ -1,5 +1,11 @@
 # Compiled Python files
+__pycache__
 *.pyc
+*.so
+*.o
+build
+dist
+*egg*
 
 # Folder view configuration files
 .DS_Store
