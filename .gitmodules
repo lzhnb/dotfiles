@@ -7,3 +7,6 @@
 [submodule ".vim"]
 	path = .vim
 	url = git@github.com:lzhnb/vimrc.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:lzhnb/neovim-vide.git

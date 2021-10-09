@@ -6,9 +6,9 @@
 ## Applications
 - zsh
 - vim
+- neovim
 
 ## TODO
-- [ ] neovim
 - [ ] tmux
 - [ ] lazygit
 
