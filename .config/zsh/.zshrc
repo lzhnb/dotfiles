@@ -19,9 +19,9 @@ else
 fi
 
 # load extension
-for file in ".aliases"; do
-    if [ -r "$XDG_CONFIG_HOME/$file" ]; then
-        source "$XDG_CONFIG_HOME/$file"
+for file in "aliases"; do
+    if [ -r "$XDG_CONFIG_HOME/zsh/$file.zsh" ]; then
+        source "$XDG_CONFIG_HOME/zsh/$file.zsh"
     fi
 done
 
