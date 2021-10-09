@@ -1,12 +1,15 @@
-[submodule ".zsh/plugins/zsh-autosuggestions"]
-	path = .zsh/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions.git
-[submodule ".zsh/plugins/zsh-syntax-highlighting"]
-	path = .zsh/plugins/zsh-syntax-highlighting
-	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
 [submodule ".vim"]
 	path = .vim
 	url = git@github.com:lzhnb/vimrc.git
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = git@github.com:lzhnb/neovim-vide.git
+[submodule ".local/share/zsh/zsh-autosuggestions"]
+	path = .local/share/zsh/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule ".local/share/zsh/zsh-syntax-highlighting"]
+	path = .local/share/zsh/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+[submodule ".loacl/share/zsh/zsh-history-substring-search"]
+	path = .loacl/share/zsh/zsh-history-substring-search
+	url = git@github.com:zsh-users/zsh-history-substring-search.git
