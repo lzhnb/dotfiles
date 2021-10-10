@@ -10,16 +10,16 @@ source "$XDG_DATA_HOME/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$XDG_DATA_HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "$XDG_DATA_HOME/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh"
 
+autoload -U colors && colors
 if [ -n "$XDG_DATA_HOME/zsh/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme" ]; then
     source "$XDG_DATA_HOME/zsh/powerlevel10k/powerlevel10k.zsh-theme"
 else
-    autoload -U colors && colors
     setopt prompt_subst
     PROMPT="❰%{$fg[green]%}%n%{$reset_color%}|%{$fg[yellow]%}%1~%{$reset_color%}%{$fg[blue]%}$(git branch --show-current 2&> /dev/null | xargs -I branch echo '(branch)')%{$reset_color%}❱"
 fi
 
 # load extension
-for file in "aliases"; do
+for file in "aliases" "fzf"; do
     if [ -r "$XDG_CONFIG_HOME/zsh/$file.zsh" ]; then
         source "$XDG_CONFIG_HOME/zsh/$file.zsh"
     fi
@@ -50,3 +50,5 @@ unset __conda_setup
 conda activate
 # <<< conda initialize <<<
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
