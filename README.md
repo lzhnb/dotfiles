@@ -10,6 +10,6 @@
 - neovim
 
 ## TODO
-- [ ] lazygit
+- [ ] lazygit/gitui
 - [ ] bootstrap
 
