@@ -9,6 +9,7 @@ fi
 source "$XDG_DATA_HOME/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$XDG_DATA_HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "$XDG_DATA_HOME/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh"
+source "$XDG_DATA_HOME/zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh"
 
 autoload -U colors && colors
 if [ -n "$XDG_DATA_HOME/zsh/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme" ]; then
@@ -50,5 +51,6 @@ unset __conda_setup
 conda activate
 # <<< conda initialize <<<
 
+# set the default editor
+export EDITOR="nvim"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

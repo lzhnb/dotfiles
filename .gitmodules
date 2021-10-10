@@ -16,3 +16,6 @@
 [submodule ".local/share/zsh/powerlevel10k"]
 	path = .local/share/zsh/powerlevel10k
 	url = git@github.com:romkatv/powerlevel10k.git
+[submodule ".local/share/zsh/zsh-vi-mode"]
+	path = .local/share/zsh/zsh-vi-mode
+	url = git@github.com:jeffreytse/zsh-vi-mode.git

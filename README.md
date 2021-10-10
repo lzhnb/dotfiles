@@ -6,6 +6,7 @@
 ## Applications
 - zsh
 - tmux
+- fzf
 - vim
 - neovim
 - miniconda3 (please setup the miniconda3 in `$XDG_CONFIG_HOME(~/.local/share)`)
