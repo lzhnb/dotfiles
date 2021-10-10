@@ -28,5 +28,6 @@ alias cp="cp -v"
 [[ ! -f "$HOME/.local/bin/tmux" ]] || alias tmux="$HOME/.local/bin/tmux"
 [[ ! -f "$HOME/.local/bin/vim" ]] || alias vim="$HOME/.local/bin/vim"
 [[ ! -f "$HOME/.local/bin/nvim" ]] || alias nvim="$HOME/.local/bin/nvim"
+[[ ! -f "$HOME/.local/bin/yadmm" ]] || alias yadm="$HOME/.local/bin/yadm"
 
 

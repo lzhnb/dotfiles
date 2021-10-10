@@ -14,7 +14,10 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
 # runing zsh if zsh exists
-if [ -f "$HOME/.local/bin/zsh" ]; then
+if [ -f "/usr/bin/zsh" ]; then
+	export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+    exec "/usr/bin/zsh"
+elif [ -f "$HOME/.local/bin/zsh" ]; then
 	export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
     exec "$HOME/.local/bin/zsh"
 elif [ -n "$BASH_VERSION" ]; then # if running bash
