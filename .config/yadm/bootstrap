@@ -1,3 +1,13 @@
+#! /usr/bin/bash
+### install miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p $HOME/.local/share/miniconda
+### install zsh
+wget -O zsh.tar.xz https://sourceforge.net/projects/zsh/files/latest/download
+mkdir zsh && unxz zsh.tar.xz && tar -xvf zsh.tar -C zsh --strip-components 1
+cd zsh
+./configure --prefix=$HOME/.local
+make
+make install
+
 
